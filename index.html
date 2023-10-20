@@ -9,21 +9,55 @@
     <body>
         <h1>これは見出しです</h1>
         <p>これは段落です。</p>
+        <iframe src="https://radiko.jp/#!/live/TBS" frameborder="1" ></iframe><br>
+        <iframe src="https://www.nhk.or.jp/radio/player/?ch=r1" frameborder="1" height="500" width="500"></iframe>
+        <div class="tabs">
+
+            <div class="tab_content" id="all_content">
+              <div class="tab_content_description">
+                <p class="c-txtsp">総合の内容がここに入ります</p>
+              </div>
+            </div>
+
+            <div class="tab_content" id="programming_content">
+              <div class="tab_content_description">
+                <p class="c-txtsp">プログラミングの内容がここに入ります</p>
+              </div>
+            </div>
+
+            <div class="tab_content" id="design_content">
+              <div class="tab_content_description">
+                <p class="c-txtsp">デザインの内容がここに入ります</p>
+              </div>
+            </div>
+          </div>
+
         <div class="tabs">
             <input id="all" type="radio" name="tab_item" checked>
-            <label class="tab_item" for="all">総合</label>
-            <input id="programming" type="radio" name="tab_item">
-            <label class="tab_item" for="programming">プログラミング</label>
+            <label class="tab_item" for="all">全体</label>
+
+            <input id="tbs" type="radio" name="tab_item">
+            <label class="tab_item" for="tbs">tbs</label>
+
             <input id="design" type="radio" name="tab_item">
             <label class="tab_item" for="design">デザイン</label>
+        
             <div class="tab_content" id="all_content">
                 総合の内容がここに入ります
             </div>
-            <div class="tab_content" id="programming_content">
-                プログラミングの内容がここに入ります
-        </div>
+
+            <div class="tab_content" id="tbs">
+                tbs
+                <p>tbs iframe is below this.</p>
+                <iframe src="https://radiko.jp/#!/live/TBS" frameborder="0"></iframe>
+                <p>tbs iframe is above this palagraf</p>
+                tbs
+            </div>
+
             <div class="tab_content" id="design_content">
                 デザインの内容がここに入ります
+            </div>
+
         </div>
     </body>
 </html>
